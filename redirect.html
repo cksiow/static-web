@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect Page</title>
+    <script>
+            // Extract the URL parameter from the query string
+            const urlParams = new URLSearchParams(window.location.search);
+            const link = urlParams.get('link');
+            
+            if (link) {
+                // Redirect to the custom URL scheme
+                window.location.href = link;
+            }
+
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html>
